@@ -1,0 +1,44 @@
+.ssr-pagination {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    .pagination-item {
+        text-decoration: none;
+        user-select: none;
+        cursor: none;
+        margin: 0 3px;
+        &.focus {
+            button{
+                color: rgb(255, 255, 255);
+                background-color: rgb(25, 118, 210);
+                &:hover{
+                    background-color: rgb(21, 101, 192);
+                }
+            }
+        }
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:32px;
+            height:32px;
+            background-color: #fff;
+            border-radius: 16px;
+            border: none;
+            cursor: pointer;
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.04);
+            }
+            &:disabled{
+                cursor:auto;
+                color: rgba(102, 99, 99, 0.87);
+                &:hover{
+                    background-color: #fff;
+                }
+                path{
+                    fill: currentcolor;
+                }
+            }
+        }
+    }
+}
